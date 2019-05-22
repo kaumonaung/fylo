@@ -51,12 +51,22 @@ nav ul li a {
   padding: 0 10px;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
 img {
   width: 100%;
 }
 
 .logo {
-  width: 70px;
+  width: 100px;
 }
 
 .section.hero {
@@ -373,7 +383,7 @@ img.footer-social {
 }
 
 img.logo-footer {
-  width: 50%;
+  width: 30%;
 }
 
 .footer.with-img {
@@ -388,7 +398,7 @@ img.logo-footer {
 }
 
 p.footer.text {
-  font-size: 16px;
+  font-size: 14px;
   padding: 10px 0;
 }
 
@@ -423,7 +433,24 @@ img.footer-social {
   text-decoration: underline;
 }
 
+@media only screen and (min-width: 320px) {
+
+  .logo {
+    width: 70px;
+  }
+
+}
+
 @media only screen and (min-width: 768px) {
+
+  nav {
+    justify-content: space-between;
+    padding: 40px 80px;
+  }
+
+  .logo {
+    width: 15%;
+  }
 
   .benefits.container {
     width: 90%;
@@ -468,7 +495,7 @@ img.footer-social {
   }
 
   img.logo-footer {
-    width: 30%;
+    width: 15%;
   }
 
 }
@@ -578,7 +605,7 @@ img.footer-social {
   }
 
   img.logo-footer {
-    width: 15%;
+    width: 10%;
   }
 
 }
